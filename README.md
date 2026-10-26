@@ -32,7 +32,6 @@ languages, phone, email) is accurate. These still need her confirmation:
 
 - [ ] **Full clinic address + PIN** for Vayas Holistic Ayurveda Centre (`#contact`)
 - [ ] **Fees** - ₹500 / ₹300 / ₹400 and US$30 / US$20 are my suggestions, not her prices
-- [ ] **UPI ID** - the `#pay` card still says `yourname@okaxis`
 - [ ] **UPI QR code** - save her Google Pay QR as `assets/img/upi-qr.png`
 - [ ] **A way to be paid from abroad** - PayPal, Wise or an international bank
       transfer. UPI does not work outside India, so without one of these the
@@ -85,7 +84,6 @@ deliberately not on the main page.
 
 Still placeholders, highlighted yellow so they cannot go live unnoticed:
 
-- **Her UPI ID** - `CONFIG.upi`, currently `yourname@okaxis`
 - **Her PayPal** - `CONFIG.paypal`, currently `paypal.me/herhandle`
 - **The UPI QR** - save her Google Pay QR as `assets/img/upi-qr.png`, then
   replace the dashed placeholder in `book.html` with the commented `<img>` tag

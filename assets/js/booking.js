@@ -29,8 +29,9 @@
       intl:  { first: "US$30",     follow: "US$20",     report: "US$25" }
     },
 
-    // TODO: replace both with her real details.
-    upi: "yourname@okaxis",
+    upi: "premalathaak@oksbi",
+
+    // TODO: replace with her real PayPal handle (or a Wise link).
     paypal: "paypal.me/herhandle"
   };
 
