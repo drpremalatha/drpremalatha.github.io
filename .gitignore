@@ -1,0 +1,11 @@
+# Source material that should NOT be published with the site.
+# Her résumé contains date of birth and home address.
+premalatha_resume.docx
+*.docx
+
+# The 24 original WhatsApp photos — the site uses cropped copies in assets/img/.
+WhatsApp Image*.jpeg
+WhatsApp Image*.jpg
+
+.DS_Store
+Thumbs.db

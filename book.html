@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a consultation - Dr. Premalatha A. K.</title>
+<meta name="description" content="Choose a time slot and book a consultation with Dr. Premalatha A. K., BAMS - online worldwide on WhatsApp, or in person at Attappadi, Palakkad.">
+<meta name="theme-color" content="#2f5d3a">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232f5d3a'/><path d='M50 78c0-26 10-44 28-52-2 30-12 46-28 52zM50 78c0-20-8-34-22-40 2 23 9 35 22 40z' fill='%23d9c89a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="booking-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" width="34" height="34"><path d="M50 82c0-28 11-47 30-56-2 32-13 49-30 56zM50 82c0-21-9-36-24-43 3 25 10 37 24 43z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>Dr. Premalatha A. K.</strong>
+        <small>BAMS · Senior Ayurveda Physician</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="btn btn-ghost" href="index.html">Back to the site</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="wrap narrow">
+
+    <header class="section-head">
+      <p class="eyebrow">Booking</p>
+      <h2>Book a consultation</h2>
+      <p class="section-sub">
+        Pick a time, tell her a little about yourself, and pay the fee. Your
+        booking arrives on her WhatsApp and she confirms it personally.
+      </p>
+    </header>
+
+    <!-- stepper -->
+    <ol class="stepper" id="stepper">
+      <li class="is-current"><span>1</span> Choose a slot</li>
+      <li><span>2</span> Your details</li>
+      <li><span>3</span> Pay &amp; confirm</li>
+    </ol>
+
+    <!-- ── STEP 1 ───────────────────────────────────────────────── -->
+    <section class="step" id="step1" aria-labelledby="step1-h">
+      <h3 id="step1-h" class="step-h">Choose a slot</h3>
+
+      <p class="tz-note" id="tz-note">
+        Times are shown in India time (IST).
+      </p>
+
+      <div class="day-strip" id="day-strip" role="group" aria-label="Choose a day"></div>
+
+      <div class="slot-grid" id="slot-grid" role="group" aria-label="Choose a time"></div>
+
+      <p class="small" id="no-slots" hidden>
+        No slots left on this day. Try another, or message her on WhatsApp and
+        she will find a time.
+      </p>
+    </section>
+
+    <!-- ── STEP 2 ───────────────────────────────────────────────── -->
+    <section class="step" id="step2" hidden aria-labelledby="step2-h">
+      <h3 id="step2-h" class="step-h">Your details</h3>
+
+      <p class="chosen" id="chosen-1"></p>
+
+      <div class="booking-form">
+        <label>
+          Full name <span class="req">*</span>
+          <input type="text" id="f-name" autocomplete="name" required>
+        </label>
+        <div class="two-up">
+          <label>
+            Age <span class="req">*</span>
+            <input type="number" id="f-age" min="0" max="120" inputmode="numeric" required>
+          </label>
+          <label>
+            City &amp; country <span class="req">*</span>
+            <input type="text" id="f-city" autocomplete="address-level2" required>
+          </label>
+        </div>
+        <div class="two-up">
+          <label>
+            Consultation
+            <select id="f-type">
+              <option value="first">First consultation</option>
+              <option value="follow">Follow-up (within 1 month)</option>
+              <option value="report">Report review / second opinion</option>
+            </select>
+          </label>
+          <label>
+            How would you like to consult?
+            <select id="f-mode">
+              <option>WhatsApp video call</option>
+              <option>WhatsApp voice call</option>
+              <option>In person at Attappadi</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          What is troubling you? <span class="req">*</span>
+          <textarea id="f-reason" rows="4" required placeholder="A few lines are enough. You can send reports and photos on WhatsApp afterwards."></textarea>
+        </label>
+        <p class="form-note">
+          Please keep this brief. Detailed medical history is better shared
+          directly with her on WhatsApp, not typed into a web page.
+        </p>
+      </div>
+
+      <div class="step-actions">
+        <button class="btn btn-ghost" type="button" data-back="1">Change slot</button>
+        <button class="btn btn-primary" type="button" id="to-step3">Continue to payment</button>
+      </div>
+      <p class="field-error" id="step2-error" hidden></p>
+    </section>
+
+    <!-- ── STEP 3 ───────────────────────────────────────────────── -->
+    <section class="step" id="step3" hidden aria-labelledby="step3-h">
+      <h3 id="step3-h" class="step-h">Pay &amp; confirm</h3>
+
+      <div class="card summary" id="summary"></div>
+
+      <fieldset class="region">
+        <legend>Where are you paying from?</legend>
+        <label><input type="radio" name="region" value="india"> India</label>
+        <label><input type="radio" name="region" value="intl"> Outside India</label>
+      </fieldset>
+
+      <div class="card pay-card">
+        <p class="fee-line">Consultation fee <strong id="fee-amount">-</strong></p>
+
+        <!-- India -->
+        <div id="pay-india" hidden>
+          <h4>Google Pay / UPI</h4>
+          <!-- TODO: her real UPI ID lives in assets/js/booking.js (CONFIG.upi).
+               Save her Google Pay QR as assets/img/upi-qr.png and it appears here. -->
+          <div class="upi">
+            <div class="qr-placeholder" role="img" aria-label="UPI QR code placeholder">
+              <span>QR code</span>
+              <small>assets/img/upi-qr.png</small>
+            </div>
+            <p class="upi-id">
+              <span>UPI ID</span>
+              <strong class="todo" id="upi-id">-</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- International -->
+        <div id="pay-intl" hidden>
+          <h4>PayPal</h4>
+          <!-- TODO: her real PayPal handle lives in assets/js/booking.js (CONFIG.paypal). -->
+          <p class="upi-id">
+            <span>PayPal</span>
+            <strong class="todo" id="paypal-id">-</strong>
+          </p>
+          <p class="small">
+            Wise or an international bank transfer also work - ask on WhatsApp
+            and the details will be sent to you.
+          </p>
+        </div>
+
+        <p class="small">
+          Pay the fee, then send your booking on WhatsApp with the payment
+          screenshot. If the time you picked turns out not to be free, she will
+          offer you the nearest one or return the fee.
+        </p>
+
+        <a class="btn btn-whatsapp btn-block btn-lg" id="wa-send" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M12.04 2A9.9 9.9 0 0 0 2.1 11.9a9.8 9.8 0 0 0 1.35 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.2h.01a9.9 9.9 0 0 0 9.93-9.9A9.9 9.9 0 0 0 12.04 2m5.8 14.06c-.25.69-1.44 1.32-2 1.36-.51.04-1.16.21-3.76-.8-3.16-1.25-5.17-4.5-5.33-4.71-.16-.21-1.28-1.7-1.28-3.25s.81-2.3 1.1-2.62c.29-.31.63-.39.84-.39l.6.01c.2.01.46-.07.72.55.25.62.86 2.16.94 2.32.08.16.13.34.02.55-.1.21-.16.34-.31.52l-.47.55c-.16.16-.32.33-.14.65.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.54.31.16.5.13.68-.08s.78-.91 1-1.22c.2-.31.42-.26.7-.16.29.1 1.82.86 2.13 1.02.31.16.52.23.6.36.07.13.07.75-.18 1.44"/></svg>
+          Send booking on WhatsApp
+        </a>
+        <p class="form-note">
+          This opens WhatsApp with your booking already written out. Attach the
+          payment screenshot and send it.
+        </p>
+      </div>
+
+      <div class="step-actions">
+        <button class="btn btn-ghost" type="button" data-back="2">Back to your details</button>
+      </div>
+    </section>
+
+    <p class="small booking-foot">
+      Not an emergency service. For chest pain, breathlessness, stroke symptoms,
+      severe bleeding or loss of consciousness, go to the nearest hospital.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>Dr. Premalatha A. K., BAMS</strong>
+      <p>Senior Ayurveda Physician · Vayas Holistic Ayurveda Centre, Attappadi, Palakkad</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Treatments</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/booking.js"></script>
+</body>
+</html>
