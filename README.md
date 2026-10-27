@@ -1,7 +1,7 @@
 # Dr. Premalatha A. K. - website
 
 A static one-page site (plain HTML + CSS + a little JS, no build step) for
-Dr. Premalatha A. K., BAMS - Senior Ayurveda Physician, Vayas Holistic Ayurveda
+Dr. Premalatha A. K., BAMS - Chief Consultant, Vayas Holistic Ayurveda
 Centre, Attappadi, Palakkad.
 
 ## Run it locally
@@ -32,7 +32,6 @@ languages, phone, email) is accurate. These still need her confirmation:
 
 - [ ] **Full clinic address + PIN** for Vayas Holistic Ayurveda Centre (`#contact`)
 - [ ] **Fees** - ₹500 / ₹300 / ₹400 and US$30 / US$20 are my suggestions, not her prices
-- [ ] **UPI QR code** - save her Google Pay QR as `assets/img/upi-qr.png`
 - [ ] **A way to be paid from abroad** - PayPal, Wise or an international bank
       transfer. UPI does not work outside India, so without one of these the
       overseas fees on the page cannot actually be collected.
@@ -41,10 +40,10 @@ languages, phone, email) is accurate. These still need her confirmation:
 - [ ] **Payment methods** - "Cash & UPI" is a guess (`#about`, Good to know card)
 - [ ] **FAQ answers** - read through with her; they are written in her voice but unverified
 - [ ] **Google Maps embed** - replace the dashed placeholder box in `#contact`
-- [ ] **Centre name** - the WhatsApp photos show a sign reading **"Ayurmana
-      Treatment Centre"**, but the résumé (and you) say she is at **Vayas Holistic
-      Ayurveda Centre**. The site currently says Vayas everywhere. Confirm which
-      name should appear, and whether the two are related.
+- [ ] **Ayurmana** - some WhatsApp photos show a sign reading **"Ayurmana
+      Treatment Centre"**. Confirmed she is Chief Consultant at **Vayas Holistic
+      Ayurveda Centre**, which the site says throughout; the photos showing the
+      other sign are simply left out. Worth asking whether the two are related.
 
 Every one of these is marked with a `TODO` comment in `index.html`:
 
@@ -85,9 +84,6 @@ deliberately not on the main page.
 Still placeholders, highlighted yellow so they cannot go live unnoticed:
 
 - **Her PayPal** - `CONFIG.paypal`, currently `paypal.me/herhandle`
-- **The UPI QR** - save her Google Pay QR as `assets/img/upi-qr.png`, then
-  replace the dashed placeholder in `book.html` with the commented `<img>` tag
-  just above it
 
 Fees: ₹500 / ₹300 / ₹400 in India, US$30 / US$20 / US$25 from abroad. Indian
 listings run ₹100-300 for a routine online consult and ₹750-2,000 at

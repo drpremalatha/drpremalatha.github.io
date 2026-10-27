@@ -7,5 +7,8 @@ premalatha_resume.docx
 WhatsApp Image*.jpeg
 WhatsApp Image*.jpg
 
+# Her Google Pay screenshot - the cropped QR lives in assets/img/upi-qr.png.
+PHOTO-*.jpg
+
 .DS_Store
 Thumbs.db
